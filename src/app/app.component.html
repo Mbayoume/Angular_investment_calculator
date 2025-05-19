@@ -1,4 +1,4 @@
 <app-header/>
-<app-user-inputs />
+<app-user-inputs (calculateData)="calculateInvestmentResults($event)"/>
+<app-investment-results [investmentResults]="calculateResults" />
 
-<!-- </app-user-inputs> -->
